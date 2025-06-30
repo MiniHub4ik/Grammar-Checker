@@ -67,7 +67,8 @@ http://127.0.0.1:5000
 
 ## 📸 Screenshot
 
-![Grammar Checker Screenshot](https://via.placeholder.com/800x400.png?text=Screenshot+Coming+Soon)
+![Grammar Checker Screenshot]([https://via.placeholder.com/800x400.png?text=Screenshot+Coming+Soon](https://ibb.co/jkp2L8YG))
+
 
 ---
 
