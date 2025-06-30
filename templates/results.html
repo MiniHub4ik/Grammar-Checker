@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grammar Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Grammar Results</h1>
+
+<div class="score-card">
+    <h3>Grammar Issues Found: {{ grammar }}</h3>
+
+    <h4>Your Text with Highlights:</h4>
+    <div class="highlighted-text">{{ highlighted_text|safe }}</div>
+
+    <h4>Recommendations:</h4>
+    <ul class="recommendations">
+        {% for rec in recommendations %}
+        <li>{{ rec }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><strong>Total Words:</strong> {{ word_count }}</p>
+</div>
+<a href="/check-again" class="check-again-btn">Check Another Text</a>
+
+<footer>
+    <p>Contact: <a href="mailto:nematullarakhimjanov3@gmail.com">nematullarakhimjanov3@gmail.com</a></p>
+    <p>
+        <a href="https://www.instagram.com/nrakhimjanov/" target="_blank">Instagram</a> |
+        <a href="https://t.me/nematilla" target="_blank">Telegram</a>
+    </p>
+</footer>
+
+</body>
+</html>

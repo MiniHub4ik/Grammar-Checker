@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grammar Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Grammar Checker</h1>
+
+<form action="/results" method="post">
+    <label for="comment">Check your text</label><br><br>
+
+    <div class="textarea-wrapper">
+        <textarea id="comment" name="comment" required>
+Although the technology has progressed a lot in the last decade, some people still believe that books are the best source of knowledge. It is argued that digital platforms can never replace reading physical books, however, I think both have their strengths and should be used together.
+        </textarea>
+        <p id="word_count">Word Count: 0</p>
+    </div>
+
+    <button id="essay_check_btn" type="submit">Check Grammar</button>
+</form>
+
+<footer>
+    <p>Contact: <a href="mailto:nematullarakhimjanov3@gmail.com">nematullarakhimjanov3@gmail.com</a></p>
+    <p>
+        <a href="https://www.instagram.com/nrakhimjanov/" target="_blank">Instagram</a> |
+        <a href="https://t.me/nematilla" target="_blank">Telegram</a>
+    </p>
+</footer>
+
+<script>
+    const textarea = document.getElementById("comment");
+    const wordCountDisplay = document.getElementById("word_count");
+
+    function updateCount() {
+        const text = textarea.value.trim();
+        const words = text.split(/\s+/).filter(word => word.length > 0);
+        wordCountDisplay.textContent = `Word Count: ${words.length}`;
+    }
+
+    textarea.addEventListener("input", updateCount);
+    window.onload = updateCount;
+</script>
+
+</body>
+</html>

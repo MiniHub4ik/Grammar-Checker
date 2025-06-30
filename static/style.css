@@ -1,0 +1,128 @@
+body {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    font-family: Arial;
+    padding: 40px;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.textarea-wrapper {
+    position: relative;
+}
+
+#comment {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+#word_count {
+    color: gray;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+#essay_check_btn {
+    width: 160px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#essay_check_btn:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.score-card {
+    width: 80%;
+    max-width: 700px;
+    background-color: white;
+    color: #333;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    margin: 0 auto;
+    text-align: left;
+}
+
+.recommendations {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.recommendations li {
+    margin-bottom: 8px;
+}
+
+.highlighted-text {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+.highlight-error {
+    background-color: #ffcccc;
+    border-bottom: 2px dotted red;
+    cursor: help;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.check-again-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.check-again-btn:hover {
+    background-color: #1c5980;
+}
