@@ -82,4 +82,9 @@ This project is licensed under the **MIT License**. You are free to use, modify,
 
 ---
 
-Made with ❤️ and Python 🐍
+
+## 🤝 Author
+
+Made with ❤️ by Nematilla.\
+Telegram: https://t.me/nematilla \
+GitHub: https://github.com/MiniHub4ik
